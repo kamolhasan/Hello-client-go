@@ -1,0 +1,7 @@
+package: github.com/kamolhasan/Hello-client-go
+import:
+- package: k8s.io/client-go
+  version: ^10.0.0
+  subpackages:
+  - kubernetes
+  - tools/clientcmd
