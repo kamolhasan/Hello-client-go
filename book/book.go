@@ -95,7 +95,7 @@ func DeleteDeployment() {
 
 func UpdateDeployment() {
 	clientset := CreateClientSet()
-	demployment, err := clientset.AppsV1().Deployments("default").Get("books",metav1.GetOptions{})
+	demployment, err := clientset.AppsV1().Deployments("default").Get("books", metav1.GetOptions{})
 	if err != nil {
 		panic(err)
 	}
@@ -192,4 +192,3 @@ func DeleteIngress() {
 	}
 
 }
-

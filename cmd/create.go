@@ -17,7 +17,7 @@ var serviceCmd = &cobra.Command{
 
 	Run: func(cmd *cobra.Command, args []string) {
 		log.Println("Creating Service")
-		book.CreateService()
+		book.CreateServiceKutil()
 	},
 }
 
@@ -26,7 +26,7 @@ var deploymentCmd = &cobra.Command{
 
 	Run: func(cmd *cobra.Command, args []string) {
 		log.Println("Creating Deployment")
-		book.CreateDeployment()
+		book.CreateDeploymentKutil()
 
 	},
 }
